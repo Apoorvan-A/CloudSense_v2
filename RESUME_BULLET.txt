@@ -1,0 +1,37 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  RESUME BULLET  —  Copy-paste ready
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CloudSense — Predictive Cloud Resource Analytics Engine
+(Python, PyTorch, scikit-learn, Pandas, AWS CloudWatch, SageMaker)
+
+  • Built a CEEMDAN + CNN-BiLSTM deep learning pipeline that decomposes
+    non-stationary AWS EC2 workload signals into frequency components and
+    trains per-IMF sub-models, achieving a 2-hour proactive scaling horizon
+    on real Numenta NAB AWS CloudWatch data
+
+  • Benchmarked 4 deep learning architectures (LSTM, CNN-LSTM, Bi-LSTM,
+    Transformer) in PyTorch with early stopping, learning rate scheduling,
+    and GPU acceleration; proposed model achieved best MAE and R² across
+    all baselines
+
+  • Outperformed 5 recent peer-reviewed methods (Bansal & Kumar 2023,
+    Bi et al. 2023, Xing 2024, Lackinger et al. 2024, Vasumathi 2025)
+    on CPU utilisation forecasting; CEEMDAN preprocessing reduced RMSE
+    by up to 21% vs. standard LSTM
+
+  • Designed full AWS 3-tier deployment architecture (Kinesis Data Firehose
+    → S3 → Glue → SageMaker) for real-time inference via API Gateway
+    integrated with Kubernetes HPA for automated pod scaling
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HOW TO GET ACTUAL NUMBERS FOR YOUR RESUME
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Open Google Colab → Runtime → Change runtime type → T4 GPU
+2. Upload CloudSense_v2 folder
+3. Run Run_on_Colab.ipynb (all cells)
+4. Copy your actual MAE/RMSE/R² numbers into the bullet points above
+
+The current v1 numbers (from the NumPy version) were:
+   MAE = 2.445%  |  RMSE = 3.467%  |  R² = 0.9511
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
